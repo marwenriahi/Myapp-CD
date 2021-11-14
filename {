@@ -148,27 +148,6 @@ To https://github.com/marwenriahi/Myapp-CD.git
 [0;31mhowever it will reset any main.yml files that may have[0m
 [0;31mbeen modified there already.[0m
 [0;31m[0m]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd ..
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd ..ansible-galaxy init build[16Pcd roles/ansible/gedit Dockerfilecd ..[Kgedit Dmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ gedit docker.yml
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd roles/
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ ansible-galaxy init docker
-- Role docker was created successfully
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ ls
-[0m[01;34mbuild[0m  [01;34mdocker[0m
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd docker/
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker[00m$ cd tasks/
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker/tasks[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker/tasks[00m$ gedit main.yml
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker/tasks[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker/tasks[00m$ cd ..
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker[00m$ cd ..
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd ..
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd ..
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ to[K[Kgedit Dockerfile
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd ansible/
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd roles/
-]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ ansible-galaxy init build
-[0;31mERROR! - the directory ./build already exists. You can use --force to re-initialize this directory,[0m
-[0;31mhowever it will reset any main.yml files that may have[0m
-[0;31mbeen modified there already.[0m
-[0;31m[0m]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd ..
 ]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd ..ansible-galaxy init build[16Pcd roles/ansible/gedit Dockerfilecd ..[Kgedit Dockerfile
 ]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ gedit Dockerfilecd ..[K
 ]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd ..gedit Dockerfile
@@ -179,4 +158,135 @@ ansible 2.9.6
   ansible python module location = /usr/lib/python3/dist-packages/ansible
   executable location = /usr/bin/ansible
   python version = 3.8.10 (default, Sep 28 2021, 16:10:42) [GCC 9.3.0]
-]0;marwen@marwen-virtual-machine:
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ git add .
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ git commit -m "hhhk"
+[master 8f3b9df] hhhk
+ 13 files changed, 311 insertions(+), 5 deletions(-)
+ create mode 100644 Dockerfile
+ create mode 100644 ansible/docker.yml
+ create mode 100644 ansible/roles/docker/.travis.yml
+ create mode 100644 ansible/roles/docker/README.md
+ create mode 100644 ansible/roles/docker/defaults/main.yml
+ create mode 100644 ansible/roles/docker/handlers/main.yml
+ create mode 100644 ansible/roles/docker/meta/main.yml
+ create mode 100644 ansible/roles/docker/tasks/main.yml
+ create mode 100644 ansible/roles/docker/tests/inventory
+ create mode 100644 ansible/roles/docker/tests/test.yml
+ create mode 100644 ansible/roles/docker/vars/main.yml
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ git push
+Username for 'https://github.com': riahi.marwen1@	 @esprit.tn
+Password for 'https://riahi.marwen1@esprit.tn@github.com': 
+Enumerating objects: 26, done.
+Counting objects:   3% (1/26)Counting objects:   7% (2/26)Counting objects:  11% (3/26)Counting objects:  15% (4/26)Counting objects:  19% (5/26)Counting objects:  23% (6/26)Counting objects:  26% (7/26)Counting objects:  30% (8/26)Counting objects:  34% (9/26)Counting objects:  38% (10/26)Counting objects:  42% (11/26)Counting objects:  46% (12/26)Counting objects:  50% (13/26)Counting objects:  53% (14/26)Counting objects:  57% (15/26)Counting objects:  61% (16/26)Counting objects:  65% (17/26)Counting objects:  69% (18/26)Counting objects:  73% (19/26)Counting objects:  76% (20/26)Counting objects:  80% (21/26)Counting objects:  84% (22/26)Counting objects:  88% (23/26)Counting objects:  92% (24/26)Counting objects:  96% (25/26)Counting objects: 100% (26/26)Counting objects: 100% (26/26), done.
+Delta compression using up to 8 threads
+Compressing objects:   8% (1/12)Compressing objects:  16% (2/12)Compressing objects:  25% (3/12)Compressing objects:  33% (4/12)Compressing objects:  41% (5/12)Compressing objects:  50% (6/12)Compressing objects:  58% (7/12)Compressing objects:  66% (8/12)Compressing objects:  75% (9/12)Compressing objects:  83% (10/12)Compressing objects:  91% (11/12)Compressing objects: 100% (12/12)Compressing objects: 100% (12/12), done.
+Writing objects:   5% (1/20)Writing objects:  10% (2/20)Writing objects:  15% (3/20)Writing objects:  20% (4/20)Writing objects:  25% (5/20)Writing objects:  30% (6/20)Writing objects:  35% (7/20)Writing objects:  40% (8/20)Writing objects:  45% (9/20)Writing objects:  50% (10/20)Writing objects:  55% (11/20)Writing objects:  60% (12/20)Writing objects:  65% (13/20)Writing objects:  70% (14/20)Writing objects:  75% (15/20)Writing objects:  80% (16/20)Writing objects:  85% (17/20)Writing objects:  90% (18/20)Writing objects:  95% (19/20)Writing objects: 100% (20/20)Writing objects: 100% (20/20), 4.72 KiB | 1.57 MiB/s, done.
+Total 20 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/marwenriahi/Myapp-CD.git
+   2ace649..8f3b9df  master -> master
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd ansible/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cdn[K inventory/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/inventory[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/inventory[00m$ ls
+host.yml
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/inventory[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/inventory[00m$ cd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ ls
+build.yml  docker.yml  [0m[01;34minventory[0m  [01;34mroles[0m
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ gedit build.yml
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ gedit /etc/sudoers
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ sudo su 
+[sudo] password for marwen: 
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapp/ansibleroot@marwen-virtual-machine:/home/marwen/Desktop/Myapp/ansible# gedit /etc/sudoers
+
+(gedit:66877): Tepl-[1;33mWARNING[0m **: [34m08:13:21.668[0m: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapp/ansibleroot@marwen-virtual-machine:/home/marwen/Desktop/Myapp/ansible# gedit /etc/sudoers
+
+(gedit:66994): Tepl-[1;33mWARNING[0m **: [34m08:14:25.649[0m: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapp/ansibleroot@marwen-virtual-machine:/home/marwen/Desktop/Myapp/ansible# gedit /etc/sudoers
+
+(gedit:67057): Tepl-[1;33mWARNING[0m **: [34m08:15:25.042[0m: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapp/ansibleroot@marwen-virtual-machine:/home/marwen/Desktop/Myapp/ansible# exit
+exit
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ [K]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ [K]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ [K]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ sudo su
+[sudo] password for marwen: 
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapproot@marwen-virtual-machine:/home/marwen/Desktop/Myapp# ln -s /usr/bin/node [Kjs /usr/bin/node
+ln: failed to create symbolic link '/usr/bin/node': File exists
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapproot@marwen-virtual-machine:/home/marwen/Desktop/Myapp# cd ..
+]0;root@marwen-virtual-machine: /home/marwen/Desktoproot@marwen-virtual-machine:/home/marwen/Desktop# cd ..
+]0;root@marwen-virtual-machine: /home/marwenroot@marwen-virtual-machine:/home/marwen# cd ..
+]0;root@marwen-virtual-machine: /homeroot@marwen-virtual-machine:/home# cd ..
+]0;root@marwen-virtual-machine: /root@marwen-virtual-machine:/# cd ..ln -s /usr/bin/nodejs /usr/bin/node[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kln -s /usr/bin/nodejs /usr/bin/node
+ln: failed to create symbolic link '/usr/bin/node': File exists
+]0;root@marwen-virtual-machine: /root@marwen-virtual-machine:/# cd é[K~
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# ll
+total 44
+drwx------  8 root root 4096 نوفمبر 14 08:12 [0m[01;34m.[0m/
+drwxr-xr-x 20 root root 4096 نوفمبر 14 04:57 [01;34m..[0m/
+-rw-------  1 root root  378 نوفمبر 14 08:32 .bash_history
+-rw-r--r--  1 root root 3106 ديسمبر  5  2019 .bashrc
+drwx------  6 root root 4096 نوفمبر 14 08:12 [01;34m.cache[0m/
+drwx------  7 root root 4096 نوفمبر 14 08:13 [01;34m.config[0m/
+drwx------  3 root root 4096 نوفمبر 14 08:12 [01;34m.dbus[0m/
+drwx------  3 root root 4096 نوفمبر 14 08:12 [01;34m.local[0m/
+drwxr-xr-x  4 root root 4096 نوفمبر 14 05:44 [01;34m.npm[0m/
+-rw-r--r--  1 root root  161 ديسمبر  5  2019 .profile
+drwxr-xr-x  3 root root 4096 نوفمبر 14 06:11 [01;34msnap[0m/
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# cd .nvm[Km
+bash: cd: .nvm: No such file or directory
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# exit
+exit
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd /var/lib/jenkins/workspace/
+]0;marwen@marwen-virtual-machine: /var/lib/jenkins/workspace[01;32mmarwen@marwen-virtual-machine[00m:[01;34m/var/lib/jenkins/workspace[00m$ ls
+[0m[01;34mMyapp-CD[0m  [01;34mMyapp-CD@2[0m  [01;34mMyapp-CD@2@tmp[0m  [01;34mMyapp-CD@tmp[0m
+]0;marwen@marwen-virtual-machine: /var/lib/jenkins/workspace[01;32mmarwen@marwen-virtual-machine[00m:[01;34m/var/lib/jenkins/workspace[00m$ exit
+exit
+
+Script done on 2021-11-14 08:40:54+01:00 [COMMAND_EXIT_CODE="0"]
+Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ [K]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ sudo su
+[sudo] password for marwen: 
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapproot@marwen-virtual-machine:/home/marwen/Desktop/Myapp# ln -s /usr/bin/node [Kjs /usr/bin/node
+ln: failed to create symbolic link '/usr/bin/node': File exists
+]0;root@marwen-virtual-machine: /home/marwen/Desktop/Myapproot@marwen-virtual-machine:/home/marwen/Desktop/Myapp# cd ..
+]0;root@marwen-virtual-machine: /home/marwen/Desktoproot@marwen-virtual-machine:/home/marwen/Desktop# cd ..
+]0;root@marwen-virtual-machine: /home/marwenroot@marwen-virtual-machine:/home/marwen# cd ..
+]0;root@marwen-virtual-machine: /homeroot@marwen-virtual-machine:/home# cd ..
+]0;root@marwen-virtual-machine: /root@marwen-virtual-machine:/# cd ..ln -s /usr/bin/nodejs /usr/bin/node[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kln -s /usr/bin/nodejs /usr/bin/node
+ln: failed to create symbolic link '/usr/bin/node': File exists
+]0;root@marwen-virtual-machine: /root@marwen-virtual-machine:/# cd é[K~
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# ll
+total 44
+drwx------  8 root root 4096 نوفمبر 14 08:12 [0m[01;34m.[0m/
+drwxr-xr-x 20 root root 4096 نوفمبر 14 04:57 [01;34m..[0m/
+-rw-------  1 root root  378 نوفمبر 14 08:32 .bash_history
+-rw-r--r--  1 root root 3106 ديسمبر  5  2019 .bashrc
+drwx------  6 root root 4096 نوفمبر 14 08:12 [01;34m.cache[0m/
+drwx------  7 root root 4096 نوفمبر 14 08:13 [01;34m.config[0m/
+drwx------  3 root root 4096 نوفمبر 14 08:12 [01;34m.dbus[0m/
+drwx------  3 root root 4096 نوفمبر 14 08:12 [01;34m.local[0m/
+drwxr-xr-x  4 root root 4096 نوفمبر 14 05:44 [01;34m.npm[0m/
+-rw-r--r--  1 root root  161 ديسمبر  5  2019 .profile
+drwxr-xr-x  3 root root 4096 نوفمبر 14 06:11 [01;34msnap[0m/
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# cd .nvm[Km
+bash: cd: .nvm: No such file or directory
+]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# [K]0;root@marwen-virtual-machine: ~root@marwen-virtual-machine:~# exit
+exit
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd /var/lib/jenkins/workspace/
+]0;marwen@marwen-virtual-machine: /var/lib/jenkins/workspace[01;32mmarwen@marwen-virtual-machine[00m:[01;34m/var/lib/jenkins/workspace[00m$ ls
+[0m[01;34mMyapp-CD[0m  [01;34mMyapp-CD@2[0m  [01;34mMyapp-CD@2@tmp[0m  [01;34mMyapp-CD@tmp[0m
+]0;marwen@marwen-virtual-machine: /var/lib/jenkins/workspace[01;32mmarwen@marwen-virtual-machine[00m:[01;34m/var/lib/jenkins/workspace[00m$ exit
+exit
+Script done, file is {
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ cd ansible/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd roles/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd docker/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker[00m$ cd tasks/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker/tasks[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker/tasks[00m$ gedit  main.yml
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker/tasks[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker/tasks[00m$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles/docker[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles/docker[00m$ cd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/roles[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/roles[00m$ cd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd inventory/
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/inventory[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/inventory[00m$ gedit host.yml 
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible/inventory[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible/inventory[00m$ cd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp/ansible[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp/ansible[00m$ cd[K[Kcd ..
+]0;marwen@marwen-virtual-machine: ~/Desktop/Myapp[01;32mmarwen@marwen-virtual-machine[00m:[01;34m~/Desktop/Myapp[00m$ g
